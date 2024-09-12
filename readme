@@ -3,7 +3,7 @@ Assignment 0 readme File
 ------------------------------------------------------------------------
 What is your name?
 
-
+Andy Zhang
 
 ------------------------------------------------------------------------
 What authorized sources of information did you use to complete the
@@ -12,6 +12,17 @@ in the "Policies" web page (also available on armlab in the file
 ~cos217/AuthorizedSourcesList ) to this section of the readme file,
 and edit it as appropriate.
 
+The course's lectures.
+
+The course's precepts.
+
+The course's website.
+
+Documents that are referenced directly by the course's website. Such documents include the course's lecture slides and precept handouts.
+
+The course's textbooks and reference manuals.
+
+The man pages on the armlab cluster.
 
 
 ------------------------------------------------------------------------
@@ -26,7 +37,7 @@ interaction, may additionally require the interaction being reported
 to the Committee on Discipline. Write "None" if you used no
 unauthorized sources of information.
 
-
+None
 
 ------------------------------------------------------------------------
 In fulfillment of the requirement from section 2.4.3 of the Academic
@@ -36,12 +47,13 @@ enter your name in the space below the following affirmation:
 This paper represents my own work in accordance with University
 regulations.
 
-
+Andy Zhang
 
 ------------------------------------------------------------------------
 What is your assessment of the assignment? Was it helpful? Was it fun?
 
-
+I believe it was helpful for learning more about the Linux operating system!
+I wouldn't call it fun but it was not bad.
 
 ------------------------------------------------------------------------
 (optional) What information can you provide about your submission that
@@ -49,13 +61,28 @@ will help your grader to grade it in the most favorable light? In
 particular, what bugs are in your submission?
 
 
-
 ------------------------------------------------------------------------
 What bash command(s) did you use to generate the files in Step 3.2?
 
+Created files:
+$ touch {1,2,3,4,5,6,7,8,9,10,11}{a,b,c,d,e,f,g,h,i,j,k,l,m,n,o,p,q,r,s,t,u,v,w,x,y,z}.txt
+
+Verified creation of files:
+$ ls
+$ *.txt
+
+Filled in text into the files:
+for ((i = 1 ; i < 12 ; i++ )); do echo "[LETTER]" >> "$i"[LETTER].txt; done
+--> Replace [LETTER] with a, b, c, ... , z
+
+Verify output:
+$ cat *.txt
+
+Confirmed proper MD5sum output:
+$ (cat *.txt) | md5sum
 
 
 ------------------------------------------------------------------------
 What is your resulting MD5 checksum from Step 3.3 (NOT 3.2!)?
 
-MD5:
+MD5: 99f437ebd6dc6f1ac6cccbbad5151cb9
